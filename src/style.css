@@ -1,0 +1,54 @@
+
+
+#mainelement {
+    width: 400px;
+    min-height: 400px;
+    background-color: rgb(151, 156, 136);
+    border: thick double black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px black;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topline {
+    display: flex;
+    align-items: center;
+}
+
+.topline span {
+    flex: 1;
+}
+
+.topline input {
+    flex: 2;
+}
+
+input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
