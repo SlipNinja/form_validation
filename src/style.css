@@ -1,13 +1,19 @@
+* {
+  font-size: 25px;
+}
 
+#title {
+  font-size: 35px;
+}
 
 #mainelement {
-    width: 400px;
-    min-height: 400px;
+    width: 650px;
+    min-height: 250px;
     background-color: rgb(151, 156, 136);
     border: thick double black;
     border-radius: 10px;
-    box-shadow: 3px 3px 6px black;
-    padding: 5px;
+    box-shadow: 4px 4px 9px black;
+    padding: 15px;
 
     display: flex;
     flex-direction: column;
@@ -19,12 +25,17 @@
     align-items: center;
 }
 
-.topline span {
+.topline > span {
     flex: 1;
 }
 
-.topline input {
+.topline > input, .topline > select {
     flex: 2;
+}
+
+.formline {
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 input:invalid {
@@ -38,6 +49,7 @@ input:invalid {
   
   /* This is the style of our error messages */
   .error {
+    text-align: center;
     width: 100%;
     padding: 0;
   
