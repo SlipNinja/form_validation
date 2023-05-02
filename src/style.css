@@ -38,6 +38,10 @@
   grid-template-rows: 1fr auto;
 }
 
+input:valid {
+  background-color: #bfb;
+}
+
 input:invalid {
     border-color: #900;
     background-color: #fdd;
